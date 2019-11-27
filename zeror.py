@@ -1,6 +1,6 @@
 import os
 
-destination = "/home/twou/Desktop/remove test/"
+destination = ""
 def remove(destination):
     for path, directory, file in os.walk(destination):
         for fileName in file:
