@@ -14,4 +14,4 @@ It means new data is writing over the old data's which is deleted from system ad
 
 # How to use?
 * Write a path to destination variable.
-* run zeror.py
+* Run zeror.py
