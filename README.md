@@ -1,7 +1,7 @@
-# What does zeror work?
+# What does Zeror work?
 Zeror writes over all files 0 byte in destination for providing permanently and unrecoverable erasure and then removes files.
 
-# Why is zeror written?
+# Why is Zeror written?
 It was my test program for data erasure because of deletion is never make datum completely erased on storage drives. Almost every data is standing their own addresses till the storage drive get harmed or the file is overwritten.
 
 # What does overwrite mean here?
