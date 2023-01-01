@@ -1,6 +1,10 @@
 import os
 
 destination = ""
+
+print("Destination is set.")
+print(f"Path: {destination}")
+
 def remove(destination):
     for path, directory, file in os.walk(destination):
         for fileName in file:
@@ -10,11 +14,14 @@ def remove(destination):
                 print(path + "/" + fileName + " [status] : overwrote")
                 os.remove(path + "/" + fileName)
                 print(path + "/" + fileName + " [status] : removed")
-            except:
-                print("An unknown error occurred.")
+            except Exception as e:
+                print(e)
 
 def main():
-    remove(destination)
+    isCorrect = input("Is it correct? [y/n] ")
+    if (isCorrect == "y"):
+        remove(destination)
+        print("Done.")
 
 if __name__ == "__main__":
     main()
